@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-zinc-50 text-zinc-900 font-sans;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-zinc-900/20 ring-offset-2 ring-offset-zinc-50;
+  }
+}
